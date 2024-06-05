@@ -3,12 +3,6 @@ import personInfo from '@/data/personInfo';
 const PersonInfo = () => {
   return (
     <div className="mx-8 sm:mx-10">
-      <div>
-        <h1 className="animate-gradient gradient-text inline-block bg-gradient-to-r font-bold text-transparent">
-          {personInfo.name}
-        </h1>
-        <h3>{personInfo.occupation}</h3>
-      </div>
       <div className="mt-10 sm:mt-20">
         <h2 className="mb-2">About</h2>
         <p>{personInfo.about}</p>
