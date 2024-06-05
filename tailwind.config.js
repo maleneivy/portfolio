@@ -10,6 +10,12 @@ module.exports = {
       maxWidth: {
         custom: '1290px',
       },
+      colors: {
+        dark: '#00132A',
+        darkBlue: '#00284F',
+        lightBlueGray: '#E7EEF6',
+        blueGreen: '#57D4D6',
+      },
     },
   },
   plugins: [],

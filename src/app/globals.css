@@ -5,6 +5,8 @@
 body {
   height: 100vh;
   margin: 0 auto;
+  @apply bg-dark;
+  @apply text-lightBlueGray;
 }
 
 h1 {
