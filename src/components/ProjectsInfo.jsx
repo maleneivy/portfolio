@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const ProjectsInfo = () => {
   return (
-    <div className="mx-8 sm:mx-10">
-      <h3>Projects at Noroff</h3>
+    <div className="mx-8 mt-6 sm:mx-10 sm:mt-10">
+      <h3 id="school-projects">Projects at Noroff</h3>
       <div className="my-4">
         {projectsInfo.map((project, index) => (
           <div key={index} className="my-4 flex flex-col sm:flex-row">

@@ -2,8 +2,8 @@ const personInfo = {
   name: 'Malene Ivy Olsen',
   occupation: 'Junior front-end developer',
   contact: {
-    linkedIn: '',
-    gitHub: '',
+    linkedIn: 'https://www.linkedin.com/in/maleneivyolsen/',
+    gitHub: 'https://github.com/maleneivy',
   },
   about: `I am from a beautiful small place at the coast of Finnmark and has been living in Oslo for over 10 years now.
 

@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        webkit: '-webkit-fill-available',
+      },
       maxWidth: {
         custom: '1290px',
       },

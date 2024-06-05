@@ -4,11 +4,13 @@ const PersonInfo = () => {
   return (
     <div className="mx-8 sm:mx-10">
       <div className="mt-10 sm:mt-20">
-        <h2 className="mb-2">About</h2>
+        <h2 id="about" className="mb-2">
+          About
+        </h2>
         <p>{personInfo.about}</p>
       </div>
       <div className="mt-4 sm:mt-8">
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <div>
           <h3>Programming Languages</h3>
           <div className="flex gap-4">
@@ -28,7 +30,7 @@ const PersonInfo = () => {
         <div className="mt-4 sm:mt-8">
           <h3>Styling</h3>
           <div>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {personInfo.skills.styles.map((style, index) => (
                 <p key={index}>{style}</p>
               ))}
