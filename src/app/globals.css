@@ -31,8 +31,20 @@ p {
 
 @layer utilities {
   .gradient-text {
-    @apply from-blueGreen-100 via-blueGreen-200 to-blueGreen-300 bg-gradient-to-r;
+    @apply bg-gradient-to-r from-blueGreen-100 via-blueGreen-200 to-darkBlue;
     background-size: 300% 300%;
     background-clip: text;
   }
+}
+
+#glow {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background: rgba(87, 212, 214, 0.2);
+  border-radius: 50%;
+  filter: blur(100px);
 }
