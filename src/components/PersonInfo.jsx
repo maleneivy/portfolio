@@ -4,7 +4,9 @@ const PersonInfo = () => {
   return (
     <div className="mx-8 sm:mx-10">
       <div>
-        <h1>{personInfo.name}</h1>
+        <h1 className="animate-gradient gradient-text inline-block bg-gradient-to-r font-bold text-transparent">
+          {personInfo.name}
+        </h1>
         <h3>{personInfo.occupation}</h3>
       </div>
       <div className="mt-10 sm:mt-20">

@@ -28,3 +28,11 @@ h4 {
 p {
   @apply text-base sm:text-lg;
 }
+
+@layer utilities {
+  .gradient-text {
+    @apply from-blueGreen-100 via-blueGreen-200 to-blueGreen-300 bg-gradient-to-r;
+    background-size: 300% 300%;
+    background-clip: text;
+  }
+}
