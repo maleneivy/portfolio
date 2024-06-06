@@ -7,7 +7,7 @@ import { smoothScroll } from '@/utils/smoothScroll';
 const Header = () => {
   return (
     <header className="mx-auto flex max-w-custom flex-col items-baseline">
-      <p className="mt-2">Portfolio.</p>
+      <p className="mx-8 mt-4 sm:mx-10">Portfolio.</p>
       <div className="mx-8 mt-20 sm:mx-10 sm:mt-36">
         <h1 className="gradient-text inline-block animate-gradient bg-gradient-to-r font-bold text-transparent">
           {personInfo.name}
@@ -49,7 +49,7 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <div className="flex-2 mr-10 mt-10 flex gap-6 pr-10">
+        <div className="flex-2 mr-10 mt-10 flex gap-6 pr-10 sm:mx-10">
           <Link
             href={personInfo.contact.gitHub}
             target="_blank"
