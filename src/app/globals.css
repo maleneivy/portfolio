@@ -2,16 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
 body {
-  height: 100vh;
-  margin: 0 auto;
+  min-height: 100vh;
+  margin: 0;
   overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+body {
   @apply bg-dark;
   @apply text-lightBlueGray;
 }
 
 h1 {
-  @apply text-3xl sm:text-4xl;
+  @apply text-3xl sm:text-5xl;
 }
 
 h2 {

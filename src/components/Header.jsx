@@ -7,13 +7,14 @@ import { smoothScroll } from '@/utils/smoothScroll';
 const Header = () => {
   return (
     <header className="mx-auto flex max-w-custom flex-col items-baseline">
+      <p className="mt-2">Portfolio.</p>
       <div className="mx-8 mt-20 sm:mx-10 sm:mt-36">
         <h1 className="gradient-text inline-block animate-gradient bg-gradient-to-r font-bold text-transparent">
           {personInfo.name}
         </h1>
         <h3 className="mt-2 sm:mt-4">{personInfo.occupation}</h3>
       </div>
-      <div className="w-webkit flex items-end justify-between">
+      <div className="flex w-webkit items-end justify-between">
         <div className="sm:flex-2 hidden gap-6 sm:flex">
           <Link href="#about">
             <span className="link" onClick={(e) => smoothScroll(e, 'about')}>
