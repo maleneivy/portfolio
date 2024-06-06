@@ -12,7 +12,21 @@ const Header = () => {
         <h1 className="gradient-text inline-block animate-gradient bg-gradient-to-r font-bold text-transparent">
           {personInfo.name}
         </h1>
-        <h3 className="mt-2 sm:mt-4">{personInfo.occupation}</h3>
+        <h3 className="mt-2">{personInfo.occupation}</h3>
+        <div className="mt-4 flex flex-col">
+          <div className="flex items-center">
+            <Icon name="location" className="text-xl text-blueGreen-200" />
+            <p className="ml-3">Oslo, Norway</p>
+          </div>
+          <div className="flex items-center">
+            <Icon name="graduate" className="text-xl text-blueGreen-200" />
+            <p className="ml-3">June - 2024</p>
+          </div>
+          <div className="flex items-center">
+            <Icon name="work" className="text-xl text-blueGreen-200" />
+            <p className="ml-3">Open for work/projects</p>
+          </div>
+        </div>
       </div>
       <div className="flex w-webkit items-end justify-between">
         <div className="sm:flex-2 hidden gap-6 sm:flex">
