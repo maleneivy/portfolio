@@ -37,3 +37,6 @@ next-env.d.ts
 
 # vsCode
 .vscode
+
+# Local Netlify folder
+.netlify
