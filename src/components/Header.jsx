@@ -3,11 +3,12 @@ import personInfo from '@/data/personInfo';
 import { Icon } from '@/ui/icons/Icons';
 import Link from 'next/link';
 import { smoothScroll } from '@/utils/smoothScroll';
+import Image from 'next/image';
 
 const Header = () => {
   return (
     <header className="mx-auto flex max-w-custom flex-col items-baseline">
-      <p className="mx-8 mt-4 sm:mx-10">Portfolio.</p>
+      <Image src="/logo.svg" width={50} height={50} className="mt-4" />
       <div className="mx-8 mt-20 sm:mx-10 sm:mt-36">
         <h1 className="gradient-text inline-block animate-gradient bg-gradient-to-r font-bold text-transparent">
           {personInfo.name}

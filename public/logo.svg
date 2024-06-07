@@ -1,0 +1,18 @@
+<svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="189.948" height="82" viewBox="0 0 189.948 82">
+  <line id="Line_2" data-name="Line 2" x1="15" y2="50.959" transform="translate(132.853 16.271)" fill="none" stroke="#c3feff" stroke-width="4"/>
+  <line id="Line_3" data-name="Line 3" x1="15" y2="50.959" transform="translate(131.853 15.271)" fill="none" stroke="#b4fcfd" stroke-width="4"/>
+  <g id="Group_3" data-name="Group 3" transform="translate(-29.346 -157.311)">
+    <path id="Path_6" data-name="Path 6" d="M22.768,0,45.537,38.454H37.358L22.768,12.965,7.449,38.454H0Z" transform="translate(29.347 220.544) rotate(-90)" fill="#e2ffff"/>
+    <path id="Path_5" data-name="Path 5" d="M23.319,0,46.638,36.663H38.261l-14.943-24.3-15.69,24.3H0Z" transform="translate(29.347 221.645) rotate(-90)" fill="#dafdfd"/>
+    <path id="Path_3" data-name="Path 3" d="M23.689,0,47.379,34.876H38.869L23.689,11.759,7.75,34.876H0Z" transform="translate(29.347 222) rotate(-90)" fill="#acfeff"/>
+    <path id="Path_4" data-name="Path 4" d="M20.5,0,41,31.653H33.632L20.5,10.672,6.706,31.653H0Z" transform="translate(29.346 218.794) rotate(-90)" fill="#69fdff"/>
+  </g>
+  <line id="Line_1" data-name="Line 1" x1="15" y2="50.959" transform="translate(130.853 14.771)" fill="none" stroke="#69fdff" stroke-width="4"/>
+  <g id="Group_4" data-name="Group 4" transform="translate(219.294 238.721) rotate(180)">
+    <path id="Path_6-2" data-name="Path 6" d="M22.768,0,45.537,38.454H37.358L22.768,12.965,7.449,38.454H0Z" transform="translate(29.347 220.544) rotate(-90)" fill="#e2ffff"/>
+    <path id="Path_5-2" data-name="Path 5" d="M23.319,0,46.638,36.663H38.261l-14.943-24.3-15.69,24.3H0Z" transform="translate(29.347 221.645) rotate(-90)" fill="#dafdfd"/>
+    <path id="Path_3-2" data-name="Path 3" d="M23.689,0,47.379,34.876H38.869L23.689,11.759,7.75,34.876H0Z" transform="translate(29.347 222) rotate(-90)" fill="#acfeff"/>
+    <path id="Path_4-2" data-name="Path 4" d="M20.5,0,41,31.653H33.632L20.5,10.672,6.706,31.653H0Z" transform="translate(29.346 218.794) rotate(-90)" fill="#69fdff"/>
+  </g>
+  <text id="Ivy" transform="translate(45.654 61)" fill="#e7eef6" font-size="60" font-family="Nunito-Regular, Nunito"><tspan x="0" y="0">Ivy</tspan></text>
+</svg>
