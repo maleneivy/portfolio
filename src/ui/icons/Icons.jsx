@@ -1,7 +1,8 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { FaLocationDot } from 'react-icons/fa6';
+import { FaLocationDot, FaX } from 'react-icons/fa6';
 import { GiGraduateCap } from 'react-icons/gi';
 import { MdWorkOutline } from 'react-icons/md';
+import { HiMenuAlt3 } from 'react-icons/hi';
 
 export const Icon = ({ name, className }) => {
   const icons = {
@@ -10,6 +11,8 @@ export const Icon = ({ name, className }) => {
     location: FaLocationDot,
     graduate: GiGraduateCap,
     work: MdWorkOutline,
+    hamburger: HiMenuAlt3,
+    close: FaX,
   };
 
   const Component = icons[name];
