@@ -8,7 +8,13 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <header className="mx-auto flex max-w-custom flex-col items-baseline">
-      <Image src="/logo.svg" width={50} height={50} className="mt-4" />
+      <Image
+        src="/logo.svg"
+        width={50}
+        height={50}
+        className="mt-4"
+        alt="Logo of two angle brackets with the text Ivy inside, in the context of HTML and XML they are referred to as tags and together with an / they denote the opening and closing of an HTML."
+      />
       <div className="mx-8 mt-20 sm:mx-10 sm:mt-36">
         <h1 className="gradient-text inline-block animate-gradient bg-gradient-to-r font-bold text-transparent">
           {personInfo.name}
