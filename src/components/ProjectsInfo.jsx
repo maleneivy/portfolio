@@ -1,4 +1,5 @@
 import projectsInfo from '@/data/projectsInfo';
+import { Icon } from '@/ui/icons/Icons';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -20,9 +21,19 @@ const ProjectsInfo = () => {
             <div className="my-4 max-w-96 p-4">
               <h4 className="font-bold">{project.title}</h4>
               <p>{project.description}</p>
-              <div>
-                <Link href={project.gitHubLink}>See on Github</Link>
-                <Link href={project.liveSiteLink}>Visit live site</Link>
+              <div className="mt-2 flex justify-end">
+                <Link href={project.gitHubLink}>
+                  <Icon
+                    name="gitHub"
+                    className="mx-2 text-4xl hover:text-blueGreen-200"
+                  />
+                </Link>
+                <Link href={project.liveSiteLink}>
+                  <Icon
+                    name="www"
+                    className="mx-2 text-4xl hover:text-blueGreen-200"
+                  />
+                </Link>
               </div>
             </div>
           </div>
