@@ -8,7 +8,7 @@ import HamburgerMenu from './HamburgerMenu';
 
 const Header = () => {
   return (
-    <header className="mx-auto flex max-w-custom flex-col items-baseline">
+    <header className="mx-auto flex max-w-custom flex-col items-center sm:items-baseline">
       <div className="flex w-10/12 items-center justify-between">
         <div>
           <Image
@@ -43,8 +43,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-webkit items-end justify-between">
-        <div className="sm:flex-2 hidden gap-6 sm:flex">
+      <div className="sm:flex sm:items-end sm:justify-between">
+        <div className="sm:flex-2 hidden sm:flex sm:gap-6">
           <Link href="#about">
             <span className="link" onClick={(e) => smoothScroll(e, 'about')}>
               About
@@ -64,7 +64,7 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <div className="flex-2 mr-10 mt-10 flex gap-6 pr-10 sm:mx-10">
+        <div className="mt-10 flex gap-6 sm:mx-10 sm:mr-10 sm:mt-10 sm:pr-10">
           <Link
             href={personInfo.contact.gitHub}
             target="_blank"
