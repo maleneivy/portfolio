@@ -18,7 +18,7 @@ const personInfo = {
   },
   skills: {
     programmingLanguages: ['Javascript'],
-    frameworks: ['React', 'Next.js', 'Node.js'],
+    frameworks: ['React', 'Next.js', 'Node.js', 'Redux'],
     styles: [
       'CSS',
       'SASS',

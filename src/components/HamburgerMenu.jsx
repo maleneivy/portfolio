@@ -2,8 +2,7 @@
 import { Icon } from '@/ui/icons/Icons';
 import Link from 'next/link';
 import { smoothScroll } from '@/utils/smoothScroll';
-
-const { useState } = require('react');
+import { useState } from 'react';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,15 +13,22 @@ const HamburgerMenu = () => {
 
   return (
     <div className="relative sm:hidden">
-      <button onClick={toggleMenu} className="text-3xl">
+      <button
+        onClick={toggleMenu}
+        className="fixed right-4 top-4 z-50 text-3xl"
+      >
         {isOpen ? (
-          <Icon name="close" className="mt-4 text-4xl text-blueGreen-200" />
+          <Icon name="close" className="text-4xl text-blueGreen-200" />
         ) : (
-          <Icon name="hamburger" className="mt-4 text-4xl text-blueGreen-200" />
+          <Icon name="hamburger" className="text-4xl text-blueGreen-200" />
         )}
       </button>
-      {isOpen && (
-        <div className="top-15 absolute right-0 z-50 flex flex-col items-baseline gap-4 rounded bg-darkBlue px-20 py-20 shadow-lg">
+      <div
+        className={`fixed right-0 top-0 z-40 h-full w-full bg-darkBlue transition-transform duration-300 ease-in-out ${
+          isOpen ? 'translate-x-0 transform' : 'translate-x-full transform'
+        }`}
+      >
+        <div className="flex h-full flex-col items-center justify-center gap-4">
           <Link href="#about">
             <span
               className="link my-2"
@@ -57,7 +63,7 @@ const HamburgerMenu = () => {
             </span>
           </Link>
         </div>
-      )}
+      </div>
     </div>
   );
 };

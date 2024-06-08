@@ -41,10 +41,36 @@ const Header = () => {
             <Icon name="work" className="text-xl text-blueGreen-200" />
             <p className="ml-3">Open for work/projects</p>
           </div>
+          <div className="mt-6 flex gap-6 sm:hidden">
+            <Link
+              href={personInfo.contact.gitHub}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon-link">
+                <Icon
+                  name="gitHub"
+                  className="text-4xl hover:text-blueGreen-200"
+                />
+              </span>
+            </Link>
+            <Link
+              href={personInfo.contact.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="icon-link">
+                <Icon
+                  name="linkedin"
+                  className="text-4xl hover:text-blueGreen-200"
+                />
+              </span>
+            </Link>
+          </div>
         </div>
       </div>
-      <div className="sm:flex sm:items-end sm:justify-between">
-        <div className="sm:flex-2 hidden sm:flex sm:gap-6">
+      <div className="hidden sm:flex sm:items-end sm:justify-between">
+        <div className="sm:flex-2 sm:flex sm:gap-6">
           <Link href="#about">
             <span className="link" onClick={(e) => smoothScroll(e, 'about')}>
               About

@@ -1,6 +1,6 @@
 const projectsInfo = [
   {
-    title: 'artful-bids',
+    title: 'Artful-bids',
     description:
       'This project was to create an auction website, where users can add items to be bid on and bid on items other users have put up for auction. The backend is from Noroff API.',
     gitHubLink: 'https://github.com/maleneivy/artfulBids',
@@ -9,7 +9,7 @@ const projectsInfo = [
     builtWith: ['HTML', 'Javascript', 'SASS', 'Bootstrap'],
   },
   {
-    title: 'omni-things',
+    title: 'Omni-things',
     description:
       'This project was to create an use Create React App to build an eCom store. The backend is from Noroff API.',
     gitHubLink: 'https://github.com/maleneivy/omni-things',
@@ -18,7 +18,7 @@ const projectsInfo = [
     builtWith: ['React', 'Redux', 'Styled Components'],
   },
   {
-    title: 'holidaze',
+    title: 'Holidaze',
     description:
       'This project was to create an accommodation booking site, with both a customer and an admin-facing side. The backend is from Noroff API.',
     gitHubLink: 'https://github.com/maleneivy/holidaze',
