@@ -68,6 +68,7 @@ const Header = () => {
             height={400}
             className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px]"
             alt="Profile image"
+            priority={true}
           />
         </div>
       </div>
