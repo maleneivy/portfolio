@@ -3,6 +3,7 @@ import './globals.css';
 import Header from '@/components/Header';
 import GlowingEffect from '@/components/GlowingEffect';
 import Footer from '@/components/Footer';
+import GoToTopButton from '@/components/GoToTopBtn';
 
 const noto = Nunito({ subsets: ['latin'] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <GoToTopButton />
       </body>
     </html>
   );
