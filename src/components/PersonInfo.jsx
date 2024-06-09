@@ -35,7 +35,7 @@ const PersonInfo = () => {
         <hr className="border-3 mb-2 mt-0 border-blueGreen-200" />
         <div className="mt-4">
           <h4>Programming Languages</h4>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6">
             {personInfo.skills.programmingLanguages.map((language, index) => (
               <p key={index} className="text-blueGreen-200">
                 {language}
@@ -45,7 +45,7 @@ const PersonInfo = () => {
         </div>
         <div className="mt-4 sm:mt-8">
           <h4>Frameworks</h4>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6">
             {personInfo.skills.frameworks.map((framework, index) => (
               <p key={index} className="text-blueGreen-200">
                 {framework}
@@ -67,7 +67,7 @@ const PersonInfo = () => {
         </div>
         <div className="mt-4 sm:mt-8">
           <h4>Other</h4>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6">
             {personInfo.skills.other.map((skill, index) => (
               <p key={index} className="text-blueGreen-200">
                 {skill}
