@@ -11,21 +11,12 @@ const Header = () => {
     <header className="mx-auto flex max-w-custom flex-col items-center sm:items-baseline">
       <div className="flex w-10/12 items-center justify-between">
         <div>
-          <Image
-            src="/logo.svg"
-            width={50}
-            height={50}
-            className="mt-4"
-            alt="Logo of two angle brackets with the text Ivy inside, in the context of HTML and XML they are referred to as tags and together with an / they denote the opening and closing of an HTML."
-          />
-        </div>
-        <div>
           <HamburgerMenu />
         </div>
       </div>
       <div className="mt-8 flex w-10/12 flex-col-reverse items-center justify-between sm:mx-10 sm:mt-20 sm:flex-row sm:items-start">
         <div className="sm:w-1/2">
-          <h1 className="gradient-text mt-10 inline-block animate-gradient bg-gradient-to-r font-bold text-transparent sm:mt-0">
+          <h1 className="gradient-text mt-2 inline-block animate-gradient bg-gradient-to-r font-bold text-transparent sm:mt-10">
             {personInfo.name}
           </h1>
           <h3 className="mt-2">{personInfo.occupation}</h3>
@@ -70,7 +61,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="mb-8 flex justify-center sm:mb-0 sm:w-1/2 sm:justify-end">
+        <div className="mb-2 mt-20 flex justify-center sm:mb-0 sm:mt-2 sm:w-1/2 sm:justify-end">
           <Image
             src="/profile.png"
             width={400}
@@ -80,7 +71,7 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className="mt-10 hidden w-full px-8 sm:flex sm:items-end sm:justify-between sm:px-0">
+      <div className="mt-10 hidden px-8 sm:flex sm:items-end sm:justify-between sm:px-0">
         <div className="sm:flex-2 sm:flex sm:gap-6">
           <Link href="#about">
             <span className="link" onClick={(e) => smoothScroll(e, 'about')}>

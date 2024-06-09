@@ -3,7 +3,7 @@ import personInfo from '@/data/personInfo';
 const PersonInfo = () => {
   return (
     <div className="mx-8 sm:mx-10">
-      <div className="fade-in mt-10 sm:mt-20">
+      <div className="mt-4 sm:mt-20">
         <h2 id="about" className="mb-2">
           About
         </h2>
@@ -21,8 +21,14 @@ const PersonInfo = () => {
             </li>
           ))}
         </ul>
+        <h4 className="mb-2 mt-6 sm:mt-10">Keywords about me</h4>
+        {personInfo.about.keywords.map((keyword, index) => (
+          <p key={index} className="text-blueGreen-200">
+            {keyword}
+          </p>
+        ))}
       </div>
-      <div className="fade-in mt-4 sm:mt-8">
+      <div className="sm:mt-15 mt-10">
         <h2 id="skills">Skills</h2>
         <hr className="border-3 mb-2 mt-0 border-blueGreen-200" />
         <div className="mt-4">

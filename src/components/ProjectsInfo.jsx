@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const ProjectsInfo = () => {
   return (
-    <div className="mx-8 mt-6 sm:mx-10 sm:mt-10">
+    <div className="sm:mt-15 mx-8 mt-10 sm:mx-10">
       <h2 id="school-projects">Projects at Noroff</h2>
       <hr className="border-3 mb-2 mt-0 border-blueGreen-200" />
       <div className="my-4 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

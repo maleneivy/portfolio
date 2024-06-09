@@ -11,7 +11,7 @@ const projectsInfo = [
   {
     title: 'Omni-things',
     description:
-      'This project was to create an use Create React App to build an eCom store. The backend is from Noroff API.',
+      'In this project I used React to create an eCom store, where I got to know Redux a bit. The backend is from Noroff API.',
     gitHubLink: 'https://github.com/maleneivy/omni-things',
     liveSiteLink: 'https://omni-things.netlify.app/',
     img: '/omni-things.png',
@@ -20,7 +20,7 @@ const projectsInfo = [
   {
     title: 'Holidaze',
     description:
-      'This project was to create an accommodation booking site, with both a customer and an admin-facing side. The backend is from Noroff API.',
+      'My final exam was to create an accommodation booking site, with both a customer and an admin-facing side. I chose to learn Next.js and used the App Router. The backend is from Noroff API.',
     gitHubLink: 'https://github.com/maleneivy/holidaze',
     liveSiteLink: 'https://holidaze-exam24.netlify.app/',
     img: '/holidaze.png',
