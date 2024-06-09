@@ -22,11 +22,13 @@ const PersonInfo = () => {
           ))}
         </ul>
         <h4 className="mb-2 mt-6 sm:mt-10">Keywords about me</h4>
-        {personInfo.about.keywords.map((keyword, index) => (
-          <p key={index} className="text-blueGreen-200">
-            {keyword}
-          </p>
-        ))}
+        <div className="flex flex-wrap gap-6">
+          {personInfo.about.keywords.map((keyword, index) => (
+            <p key={index} className="text-blueGreen-200">
+              {keyword}
+            </p>
+          ))}
+        </div>
       </div>
       <div className="sm:mt-15 mt-10">
         <h2 id="skills">Skills</h2>
