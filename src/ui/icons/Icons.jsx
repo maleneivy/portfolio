@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaArrowUp } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowUp, FaMoon, FaSun } from 'react-icons/fa';
 import { FaLocationDot, FaX } from 'react-icons/fa6';
 import { GiGraduateCap } from 'react-icons/gi';
 import { MdWorkOutline } from 'react-icons/md';
@@ -16,6 +16,8 @@ export const Icon = ({ name, className }) => {
     close: FaX,
     www: TfiWorld,
     arrowUp: FaArrowUp,
+    moon: FaMoon,
+    sun: FaSun,
   };
 
   const Component = icons[name];
