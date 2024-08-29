@@ -14,6 +14,7 @@ module.exports = {
         custom: '1290px',
       },
       colors: {
+        light: '#FFFCFC',
         dark: '#00132A',
         darkBlue: '#00284F',
         lightBlueGray: '#E7EEF6',

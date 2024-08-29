@@ -12,6 +12,11 @@ body {
 }
 
 body {
+  @apply bg-light;
+  @apply text-dark;
+}
+
+.dark body {
   @apply bg-dark;
   @apply text-lightBlueGray;
 }
@@ -38,13 +43,19 @@ p {
 
 @layer utilities {
   .gradient-text {
+    @apply bg-gradient-to-r from-blueGreen-200 to-darkBlue;
+    background-size: 300% 300%;
+    background-clip: text;
+  }
+
+  .dark .gradient-text {
     @apply bg-gradient-to-r from-blueGreen-100 via-blueGreen-200 to-darkBlue;
     background-size: 300% 300%;
     background-clip: text;
   }
 }
 
-#glow {
+.dark #glow {
   position: fixed;
   width: 200px;
   height: 200px;
