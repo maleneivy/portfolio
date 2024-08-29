@@ -16,7 +16,7 @@ const PersonInfo = () => {
         <h4 className="mb-2 mt-6 sm:mt-10">Education</h4>
         <ul className="list-disc pl-5">
           {personInfo.about.education.map((edu, index) => (
-            <li key={index} className="mb-2 font-light text-lightBlueGray">
+            <li key={index} className="mb-2 font-light dark:text-lightBlueGray">
               {edu}
             </li>
           ))}

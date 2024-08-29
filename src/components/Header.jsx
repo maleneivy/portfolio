@@ -90,7 +90,7 @@ const Header = () => {
                 <span className="icon-link">
                   <Icon
                     name="gitHub"
-                    className="text-4xl hover:text-blueGreen-200"
+                    className="text-4xl text-blueGreen-300 hover:text-blueGreen-200"
                   />
                 </span>
               </Link>
@@ -102,7 +102,7 @@ const Header = () => {
                 <span className="icon-link">
                   <Icon
                     name="linkedin"
-                    className="text-4xl hover:text-blueGreen-200"
+                    className="text-4xl text-blueGreen-300 hover:text-blueGreen-200"
                   />
                 </span>
               </Link>

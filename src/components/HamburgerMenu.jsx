@@ -20,11 +20,14 @@ const HamburgerMenu = () => {
         {isOpen ? (
           <Icon name="close" className="text-4xl text-blueGreen-200" />
         ) : (
-          <Icon name="hamburger" className="text-4xl text-blueGreen-200" />
+          <Icon
+            name="hamburger"
+            className="text-4xl text-blueGreen-300 dark:text-blueGreen-200"
+          />
         )}
       </button>
       <div
-        className={`fixed right-0 top-0 z-40 h-full w-full bg-darkBlue transition-transform duration-300 ease-in-out ${
+        className={`fixed right-0 top-0 z-40 h-full w-full bg-darkBlue text-blueGreen-200 transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0 transform' : 'translate-x-full transform'
         }`}
       >

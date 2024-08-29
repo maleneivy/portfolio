@@ -12,7 +12,7 @@ const ProjectsInfo = () => {
         {projectsInfo.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col rounded-lg border border-blueGreen-200 bg-darkBlue transition-all duration-300 hover:bg-darkBlue"
+            className="flex flex-col rounded-lg border border-blueGreen-200 bg-blueGreen-300 transition-all duration-300 dark:bg-darkBlue"
           >
             <div className="overflow-hidden rounded-t-lg">
               <Image
@@ -31,7 +31,7 @@ const ProjectsInfo = () => {
                   <h4 className="font-semibold text-lightBlueGray">
                     Built With:
                   </h4>
-                  <ul className="mt-2 flex flex-wrap gap-4 text-blueGreen-200">
+                  <ul className="mt-2 flex flex-wrap gap-4 text-blueGreen-100 dark:text-blueGreen-200">
                     {project.builtWith.map((tech, idx) => (
                       <li key={idx}>{tech}</li>
                     ))}
