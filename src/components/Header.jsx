@@ -1,4 +1,5 @@
 'use client';
+import { useState, useEffect } from 'react';
 import personInfo from '@/data/personInfo';
 import { Icon } from '@/ui/icons/Icons';
 import Link from 'next/link';
@@ -7,8 +8,35 @@ import Image from 'next/image';
 import HamburgerMenu from './HamburgerMenu';
 
 const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      setIsDarkMode(true);
+      document.documentElement.classList.add('dark');
+    } else {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove('dark');
+    }
+  }, []);
+
+  const toggleDarkMode = () => {
+    if (isDarkMode) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <header className="mx-auto flex max-w-custom flex-col items-center sm:items-baseline">
+      <button onClick={toggleDarkMode} className="bg-blueGreen">
+        {isDarkMode ? 'Light' : 'Dark'}
+      </button>
       <div className="flex w-10/12 items-center justify-between">
         <div>
           <HamburgerMenu />
