@@ -5,30 +5,15 @@ const personInfo = {
     linkedIn: 'https://www.linkedin.com/in/maleneivyolsen/',
     gitHub: 'https://github.com/maleneivy',
   },
-  about: {
-    intro: `Hi there! Thank you for visiting my site.
-    Let me tell you a little about myself. I am from a small village at the coast of Finnmark and I have been living in Oslo for over 10 years. I decided to change my path during covid and started at Noroff, studying online frontend-development part-time. The last year I have taken the course full time and graduated in June 2024.\n
-    When I am not coding, I love to camp, fish, crochet amigurumis, run and spend a lot of time with my dog, my fiancé and my friends.`,
-    keywords: [
-      'Curious',
-      'Creative',
-      'Quick Learner',
-      'Eye for Design',
-      'Team Player',
-      'Passionate',
-      'Adaptable',
-      'User-Focused',
-    ],
-    education: [
-      'Vocational school education in front-end development at Noroff',
-      'Bachelors degree in Art, Design and Crafts Teacher at OsloMet',
-      'Annual Study in Communication at UiA',
-    ],
-  },
   skills: {
-    programmingLanguages: ['Javascript'],
-    frameworks: ['React', 'Next.js', 'Node.js', 'Redux', 'Wordpress'],
-    styles: [
+    webTech: [
+      'Javascript',
+      'Typescript',
+      'React',
+      'Next.js',
+      'Node.js',
+      'Redux',
+      'Wordpress',
       'CSS',
       'SASS',
       'Tailwind CSS',
