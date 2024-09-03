@@ -1,5 +1,5 @@
 import { Nunito } from 'next/font/google';
-import './globals.css';
+import '../globals.css';
 import Header from '@/components/Header';
 import GlowingEffect from '@/components/GlowingEffect';
 import Footer from '@/components/Footer';
