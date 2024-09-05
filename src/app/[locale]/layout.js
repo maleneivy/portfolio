@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
       <body className={noto.className}>
         <GlowingEffect />
         {children}
-        <Footer />
         <GoToTopButton />
       </body>
     </html>

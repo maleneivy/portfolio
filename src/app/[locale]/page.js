@@ -3,6 +3,7 @@ import ProjectsInfo from '@/components/ProjectsInfo';
 import initTranslations from '../i18n';
 import TranslationsProvider from '@/components/TranslationsProvider';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const i18nNamespaces = ['home'];
 
@@ -20,6 +21,7 @@ export default async function Home({ params: { locale } }) {
           <PersonInfo />
           <ProjectsInfo />
         </main>
+        <Footer />
       </>
     </TranslationsProvider>
   );

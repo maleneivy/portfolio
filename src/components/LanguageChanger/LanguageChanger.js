@@ -39,7 +39,7 @@ export default function LanguageChanger({ isDarkMode }) {
     <select
       onChange={handleChange}
       value={currentLocale}
-      className={`rounded border border-gray-300 px-2 py-1 ${
+      className={`cursor-pointer rounded border border-gray-300 px-2 py-1 ${
         isDarkMode ? 'bg-darkBlue text-light' : 'bg-white text-black'
       }`}
     >

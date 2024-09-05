@@ -13,7 +13,7 @@ const PersonInfo = () => {
     <div className="mx-8 sm:mx-10">
       <div className="mt-4 sm:mt-20">
         <h2 id="about" className="mb-2">
-          About
+          {t('about')}
         </h2>
         <hr className="border-3 mb-2 mt-0 border-blueGreen-200" />
         {t('greeting')

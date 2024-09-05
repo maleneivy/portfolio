@@ -7,8 +7,10 @@ import { smoothScroll } from '@/utils/smoothScroll';
 import Image from 'next/image';
 import HamburgerMenu from './HamburgerMenu';
 import LanguageChanger from './LanguageChanger/LanguageChanger';
+import { useTranslation } from 'next-i18next';
 
 const Header = () => {
+  const { t } = useTranslation('home');
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -74,19 +76,19 @@ const Header = () => {
           <h1 className="gradient-text mt-2 inline-block animate-gradient bg-gradient-to-r font-bold text-transparent sm:mt-10">
             {personInfo.name}
           </h1>
-          <h3 className="mt-2">{personInfo.occupation}</h3>
+          <h3 className="mt-2">{t('profession')}</h3>
           <div className="mt-4 flex flex-col">
             <div className="flex items-center">
               <Icon name="location" className="text-xl text-blueGreen-200" />
-              <p className="ml-3">Oslo, Norway</p>
+              <p className="ml-3">{t('city')}</p>
             </div>
             <div className="flex items-center">
               <Icon name="graduate" className="text-xl text-blueGreen-200" />
-              <p className="ml-3">June - 2024</p>
+              <p className="ml-3">{t('graduated')}</p>
             </div>
             <div className="flex items-center">
               <Icon name="work" className="text-xl text-blueGreen-200" />
-              <p className="ml-3">Open for work/projects</p>
+              <p className="ml-3">{t('work')}</p>
             </div>
             <div className="mt-6 flex gap-6">
               <Link
@@ -131,12 +133,12 @@ const Header = () => {
         <div className="sm:flex-2 sm:flex sm:gap-6">
           <Link href="#about">
             <span className="link" onClick={(e) => smoothScroll(e, 'about')}>
-              About
+              {t('about')}
             </span>
           </Link>
           <Link href="#skills">
             <span className="link" onClick={(e) => smoothScroll(e, 'skills')}>
-              Skills
+              {t('skills')}
             </span>
           </Link>
           <Link href="#school-projects">
@@ -144,7 +146,7 @@ const Header = () => {
               className="link"
               onClick={(e) => smoothScroll(e, 'school-projects')}
             >
-              School projects
+              {t('projects')}
             </span>
           </Link>
         </div>

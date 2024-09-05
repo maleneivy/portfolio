@@ -1,6 +1,5 @@
 const personInfo = {
   name: 'Malene Ivy Olsen',
-  occupation: 'Junior front-end developer',
   contact: {
     linkedIn: 'https://www.linkedin.com/in/maleneivyolsen/',
     gitHub: 'https://github.com/maleneivy',
