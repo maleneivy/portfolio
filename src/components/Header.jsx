@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { smoothScroll } from '@/utils/smoothScroll';
 import Image from 'next/image';
 import HamburgerMenu from './HamburgerMenu';
+import LanguageChanger from './LanguageChanger/LanguageChanger';
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -36,32 +37,38 @@ const Header = () => {
     <header className="mx-auto flex max-w-custom flex-col items-center sm:items-baseline">
       <div className="flex w-10/12 items-center justify-between">
         <div>
-          <div
-            onClick={toggleDarkMode}
-            className="cursor-pointer items-center self-start pr-4 pt-4"
-          >
-            <div
-              className={`flex h-8 w-14 items-center rounded-full p-1 transition-colors duration-500 ease-in-out ${
-                isDarkMode ? 'bg-blue shadow-sm' : 'bg-lightBlueGray shadow-sm'
-              }`}
-            >
+          <div className="cursor-pointer items-center self-start pr-4 pt-4">
+            <div className="flex gap-4">
               <div
-                className={`flex h-6 w-6 transform items-center justify-center rounded-full shadow-md transition-transform duration-500 ease-in-out ${
-                  isDarkMode ? 'translate-x-6 bg-dark' : 'text-light'
+                onClick={toggleDarkMode}
+                className={`mr-4 flex h-8 w-14 rounded-full p-1 transition-colors duration-500 ease-in-out ${
+                  isDarkMode
+                    ? 'bg-blue shadow-sm'
+                    : 'bg-lightBlueGray shadow-sm'
                 }`}
               >
-                <Icon
-                  name={isDarkMode ? 'moon' : 'sun'}
-                  className={`h-4 w-4 transition-transform duration-500 ease-in-out ${
-                    isDarkMode ? 'text-light' : 'text-blueGreen-200'
+                <div
+                  className={`flex h-6 w-6 transform items-center justify-center rounded-full shadow-md transition-transform duration-500 ease-in-out ${
+                    isDarkMode ? 'translate-x-6 bg-dark' : 'text-light'
                   }`}
-                />
+                >
+                  <Icon
+                    name={isDarkMode ? 'moon' : 'sun'}
+                    className={`h-4 w-4 transition-transform duration-500 ease-in-out ${
+                      isDarkMode ? 'text-light' : 'text-blueGreen-200'
+                    }`}
+                  />
+                </div>
+              </div>
+              <div>
+                <LanguageChanger isDarkMode={isDarkMode} />
               </div>
             </div>
           </div>
           <HamburgerMenu />
         </div>
       </div>
+
       <div className="mt-8 flex w-10/12 flex-col-reverse items-center justify-between sm:mx-10 sm:mt-20 sm:flex-row sm:items-start">
         <div className="sm:w-1/2">
           <h1 className="gradient-text mt-2 inline-block animate-gradient bg-gradient-to-r font-bold text-transparent sm:mt-10">

@@ -2,6 +2,7 @@ import PersonInfo from '@/components/PersonInfo';
 import ProjectsInfo from '@/components/ProjectsInfo';
 import initTranslations from '../i18n';
 import TranslationsProvider from '@/components/TranslationsProvider';
+import Header from '@/components/Header';
 
 const i18nNamespaces = ['home'];
 
@@ -13,10 +14,13 @@ export default async function Home({ params: { locale } }) {
       locale={locale}
       resources={resources}
     >
-      <main className="sm:mt-15 mx-auto mt-10 max-w-custom">
-        <PersonInfo />
-        <ProjectsInfo />
-      </main>
+      <>
+        <Header />
+        <main className="sm:mt-15 mx-auto mt-10 max-w-custom">
+          <PersonInfo />
+          <ProjectsInfo />
+        </main>
+      </>
     </TranslationsProvider>
   );
 }
