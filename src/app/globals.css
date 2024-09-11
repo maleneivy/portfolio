@@ -21,6 +21,14 @@ body {
   @apply text-lightBlueGray;
 }
 
+.keywords {
+  @apply text-blueGreen-300;
+}
+
+.dark .keywords {
+  @apply text-blueGreen-200;
+}
+
 h1 {
   @apply text-3xl sm:text-5xl;
 }

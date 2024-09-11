@@ -24,23 +24,15 @@ const PersonInfo = () => {
             </p>
           ))}
         <h4 className="mb-2 mt-6 sm:mt-10">{t('education')}</h4>
-        <ul className="list-disc pl-5">
-          <li className="mb-2 font-light dark:text-lightBlueGray">
-            {t('noroff')}
-          </li>
-          <li className="mb-2 font-light dark:text-lightBlueGray">
-            {t('oslomet')}
-          </li>
-          <li className="mb-2 font-light dark:text-lightBlueGray">
-            {t('uia')}
-          </li>
-        </ul>
+        <p className="mb-2 font-light">- {t('noroff')}</p>
+        <p className="mb-2 font-light">- {t('oslomet')}</p>
+        <p className="mb-2 font-light">- {t('uia')}</p>
         <h4 className="mb-2 mt-6 sm:mt-10">{t('keywords')}</h4>
         <div className="flex flex-wrap gap-6">
           {t('skills-set')
             .split(',')
             .map((skill, index) => (
-              <p key={index} className="text-blueGreen-200">
+              <p key={index} className="keywords">
                 {capitalizeFirstLetter(skill.trim())}
               </p>
             ))}
@@ -53,7 +45,7 @@ const PersonInfo = () => {
           <h4 className="mb-2">{t('web-tech')}</h4>
           <div className="flex flex-wrap gap-6">
             {personInfo.skills.webTech.map((language, index) => (
-              <p key={index} className="text-blueGreen-200">
+              <p key={index} className="keywords">
                 {language}
               </p>
             ))}
@@ -63,7 +55,7 @@ const PersonInfo = () => {
           <h4 className="mb-2">{t('other')}</h4>
           <div className="flex flex-wrap gap-6">
             {personInfo.skills.other.map((skill, index) => (
-              <p key={index} className="text-blueGreen-200">
+              <p key={index} className="keywords">
                 {skill}
               </p>
             ))}

@@ -48,14 +48,14 @@ const ProjectsInfo = () => {
               <div className="mt-2 flex justify-between">
                 <Link
                   href={project.gitHubLink}
-                  className="flex items-center hover:text-blueGreen-200"
+                  className="flex items-center hover:text-blueGreen-200 dark:text-light"
                 >
                   <Icon name="gitHub" className="mr-1 text-2xl" />
                   <span>{t('code-site')}</span>
                 </Link>
                 <Link
                   href={project.liveSiteLink}
-                  className="flex items-center hover:text-blueGreen-200"
+                  className="flex items-center hover:text-blueGreen-200 dark:text-light"
                 >
                   <Icon name="www" className="mr-1 text-2xl" />
                   <span>{t('website')}</span>
