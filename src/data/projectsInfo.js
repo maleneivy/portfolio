@@ -1,5 +1,13 @@
 const projectsInfo = [
   {
+    title: 'Pop The Bubble',
+    descriptionKey: 'project.popTheBubble.description',
+    gitHubLink: 'https://github.com/maleneivy/popTheBubble',
+    liveSiteLink: 'https://popth3bubble.netlify.app/',
+    img: '/game.png',
+    builtWith: ['HTML5', 'CSS3', 'Typescript'],
+  },
+  {
     title: 'Artful-bids',
     descriptionKey: 'project.artfulBids.description',
     gitHubLink: 'https://github.com/maleneivy/artfulBids',
